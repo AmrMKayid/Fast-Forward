@@ -1,0 +1,14 @@
+{
+  "name": "fast-forward",
+  "version": "1.0.0",
+  "description": "Simple Node.js function that counts the occurrences of each number in the array",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AmrMKayid",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
