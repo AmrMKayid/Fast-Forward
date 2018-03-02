@@ -8,7 +8,7 @@ const _PORT = process.env.PORT;
 
 
 app.get('/', (req, res, next) => {
-  res.send('Fast Forward Task');
+  res.send('Fast Forward Task!');
 });
 
 app.get('/count', (req, res, next) => {
