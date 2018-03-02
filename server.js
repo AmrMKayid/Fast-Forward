@@ -12,22 +12,19 @@ app.get('/', (req, res, next) => {
 });
 
 app.get('/count', (req, res, next) => {
-  res.send("Array: " + req.query.array);
-  countOcc(req.query.array);
+  res.send(countOcc(req.query.array));
 });
 
-/* Function to count num of occurences in Arr */
-
+/* Function that counts the occurrences of each number in the array */
 function countOcc(arr) {
   arr = arr.split(',').map(Number);
-  var occurrences = arr.reduce(function(obj, item) {
+  var occurrences = arr.reduce((obj, item) => {
     obj[item] = (obj[item] || 0) + 1;
     return obj;
-    }, {});
-  console.log(occurrences);
+  }, {});
+  // console.log(occurrences);
   return occurrences;
 }
-
 
 // Start the server
 app.listen(_PORT, () => {
